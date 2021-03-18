@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %} Products {% endblock %}
+{% block content %}
+
+<body class="bg-light">
+
+  <div class="container bg-light">
+    <h2 class="text-success" id="MenTshirt"><strong>Mens</strong></h2>
+    <hr />
+    <div class="row" id="mensDIV">   
+      <div class="row ">   
+      
+        
+       
+          {% for row in result1 %}
+      
+          
+          <div class="col">
+            <div class="card mt-3" style="width: 15rem;">
+              <img src="{{ row.pimgurl}}" class="card-img-top" alt="https://fakeimg.pl/350x200/ff0000/000">
+              <div class="card-body">
+                <h5 class="card-title">{{ row.pname}}</h5>
+                <p class="card-text"> {{ row.price }}</p>
+                <a href="#" class="btn btn-warning btn-block">Add to Cart</a>
+                <a href="#" class="btn  btn-block btn-outline-success">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+      
+          {% endfor %}
+      
+          
+      </div>
+
+    
+    </div>
+
+    <br>
+    <h2 class="text-success" id="WomensTshirt"><strong>Womens</strong></h2>
+    <hr />
+
+    <div class="row" id="womensDIV">   
+      <div class="row ">   
+      
+        
+       
+          {% for row in result2 %}
+      
+          
+          <div class="col">
+            <div class="card mt-3" style="width: 15rem;">
+              <img src="{{ row.pimgurl}}" class="card-img-top" alt="https://fakeimg.pl/350x200/ff0000/000">
+              <div class="card-body">
+                <h5 class="card-title">{{ row.pname}}</h5>
+                <p class="card-text"> {{ row.price }}</p>
+                <a href="#" class="btn btn-warning btn-block">Add to Cart</a>
+                <a href="#" class="btn  btn-block btn-outline-success">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+      
+          {% endfor %}
+      
+          
+      </div>
+
+    
+    </div>
+
+    <br>
+    <h2 class="text-success" id="KidsTshirt"><strong>Kids</strong></h2>
+    <hr />
+
+    <div class="row" id="kidsDIV">   
+      <div class="row ">   
+      
+        
+       
+          {% for row in result3 %}
+      
+          
+          <div class="col">
+            <div class="card mt-3" style="width: 15rem;">
+              <img src="{{ row.pimgurl}}" class="card-img-top" alt="https://fakeimg.pl/350x200/ff0000/000">
+              <div class="card-body">
+                <h5 class="card-title">{{ row.pname}}</h5>
+                <p class="card-text"> {{ row.price }}</p>
+                <a href="#" class="btn btn-warning btn-block">Add to Cart</a>
+                <a href="#" class="btn  btn-block btn-outline-success">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+      
+          {% endfor %}
+      
+          
+      </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+    
+   
+    
+    </div>
+
+
+
+</body>
+
+   
+{% endblock %}
